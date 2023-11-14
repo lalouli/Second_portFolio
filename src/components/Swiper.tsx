@@ -58,7 +58,7 @@ export default function CarouselTeam() {
       >
         {(team as TeamType[]).map((item: TeamType, index: number) => (
           <SwiperSlide className="rounded-[8px] space-y-4" key={index}>
-            <div className="flex items-center justify-center h-[500px]">
+            <div className="md:flex items-center justify-center hidden md:h-[500px]">
             <Image
               src={item.image}
               alt="team pfp"
@@ -76,7 +76,7 @@ export default function CarouselTeam() {
                 className="min-w-1 self-start cursor-pointer min-h-1 py-2 px-2  flex items-start justify-start">
               </div>
               </div>
-              <div className="text-center text-[20px] font-skranji py-2 px-2 h-[80%]">
+              <div className="text-center text-[15px] lg:text-[20px] font-skranji py-2 px-2 h-[80%]">
                 {item.description}
               </div>
             </div>
