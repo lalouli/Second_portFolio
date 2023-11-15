@@ -8,7 +8,7 @@ import Css from "../../public/css.svg";
 import tailwind from "../../public/tailwindcss-icon.svg";
 import Js from "../../public/js.svg";
 import figma from "../../public/figma.svg";
-import angular from "../../public/angular.svg";
+import angular from "../../public/Angular.svg";
 import Image from "next/image";
 import Threed from "../../public/3d-model.svg";
 
