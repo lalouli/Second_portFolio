@@ -16,6 +16,7 @@ export default function Home() {
       <Profile/>
       <Projects/>
       <Skils/>
+      <Contact/>
     </main>
   )
 }

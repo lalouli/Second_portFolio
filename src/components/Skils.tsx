@@ -11,11 +11,7 @@ import figma from "../../public/figma.svg";
 import angular from "../../public/angular.svg";
 import Image from "next/image";
 import Threed from "../../public/3d-model.svg";
-import { Typography } from "@material-tailwind/react";
-import { IconBrandLinkedin } from "@tabler/icons-react";
-import { IconBrandGithub } from "@tabler/icons-react";
-import { IconMail } from "@tabler/icons-react";
-import { IconDeviceLandlinePhone } from "@tabler/icons-react";
+
 const Skils = () => {
   return (
     <div className="w-full h-screen flex flex-col gap-10">
@@ -258,61 +254,7 @@ const Skils = () => {
           </div>
         </div>
       </div>
-      <div className=" h-[200px] w-full">
-        <footer className="relative w-full h-full bg-white">
-          <div className="h-full">
-            <div className="h-full w-full border flex items-center gap-4">
-              <Typography
-                variant="h5"
-                className=" w-[20%] ml-6 mt-6   text-3xl font-teko "
-              >
-                My Portfolio
-              </Typography>
-              <Typography
-                as="a"
-                href="https://github.com/lalouli"
-                className=" w-[20%]  mt-6 opacity-80 transition-opacity hover:opacity-100"
-              >
-                <IconBrandGithub className="w-[70px] h-[70px]"/>
-              </Typography>
-              <Typography
-                as="a"
-                href="https://www.linkedin.com/in/houssam-lalouli-56a40b215/"
-                className=" w-[20%] mt-6 opacity-80 transition-opacity hover:opacity-100"
-              >
-                <IconBrandLinkedin className="text-blue-500 w-[70px] h-[70px]"  />
-              </Typography>
-              <Typography
-                as="a"
-                href="#"
-                className="flex w-[20%] mt-6 opacity-80 transition-opacity hover:opacity-100"
-              >
-                <IconMail className="text-red-500 w-[70px] h-[70px]"/>
-                <div className="flex flex-col lg:flex-row justify-center items-center ">
-
-                <span className="text-2xl font-teko font-bold ">
-            lalouli.houssam2017@gmail.com
-            </span>
-                </div>
-               
-              </Typography>
-              <Typography
-                as="a"
-                href="#"
-                className="flex w-[20%] mt-6 opacity-80 transition-opacity hover:opacity-100"
-              >
-                <IconDeviceLandlinePhone className="w-[70px] h-[70px]" />
-                <div className="flex flex-col lg:flex-row justify-center items-center">
-
-                <span className="text-2xl font-teko font-bold ">
-              06 17 93 75 29
-            </span>
-                </div>
-              </Typography>
-            </div>
-          </div>
-        </footer>
-      </div>
+   
     </div>
   );
 };
