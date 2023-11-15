@@ -3,6 +3,7 @@ import Logo from '../../public/logo.svg'
 import Profile from '@/components/profile'
 import Projects from '@/components/projects'
 import Skils from '@/components/Skils'
+import Contact from '@/components/Contact'
 
 export default function Home() {
   return (

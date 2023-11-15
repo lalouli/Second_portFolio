@@ -11,6 +11,11 @@ import figma from "../../public/figma.svg";
 import angular from "../../public/angular.svg";
 import Image from "next/image";
 import Threed from "../../public/3d-model.svg";
+import { Typography } from "@material-tailwind/react";
+import { IconBrandLinkedin } from "@tabler/icons-react";
+import { IconBrandGithub } from "@tabler/icons-react";
+import { IconMail } from "@tabler/icons-react";
+import { IconDeviceLandlinePhone } from "@tabler/icons-react";
 const Skils = () => {
   return (
     <div className="w-full h-screen flex flex-col gap-10">
@@ -27,203 +32,286 @@ const Skils = () => {
           </span>
         </motion.div>
       </div>
-      <div className="w-full h-full flex flex-col">
-        <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1 + 0 * 0.2 }}
-          className=" w-[90%] lg:w-[30%] h-[100px] flex flex-row gap-4 "
-        >
-          <span className=" w-[50%] font-teko text-bold text-4xl text-[#FAEBD7] flex justify-center items-center">
-            Html
-          </span>
-          <Image src={Html} alt="html" className="hidden lg:flex w-[50%]" />
-        </motion.div>
-        <motion.div
-          initial={{ width: 0 }}
-          whileInView={{ opacity: 1, y: 0, width: "10%" }}
-          transition={{ duration: 1, delay: 1 + 0 * 0.2 }}
-          className="h-[2px] bg-white"
-        >
-          {" "}
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1 + 1 * 0.2 }}
-          className="w-[90%] lg:w-[40%] h-[100px] flex flex-row gap-4 "
-        >
-          <span className="w-[50%] font-teko text-bold text-4xl text-[#FAEBD7] flex justify-center items-center ">
-            React
-          </span>
-          <Image src={react} alt="html" className="hidden lg:flex w-[50%] " />
-        </motion.div>
-        <motion.div
-          initial={{ width: 0 }}
-          whileInView={{ opacity: 1, y: 0, width: "20%" }}
-          transition={{ duration: 1, delay: 1 + 1 * 0.2 }}
-          className="  h-[2px] bg-white"
-        >
-          {" "}
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1 + 2 * 0.2 }}
-          className="w-[90%] lg:w-[50%] h-[100px] flex flex-row gap-4"
-        >
-          <span className="w-[50%] font-teko text-bold text-4xl text-[#FAEBD7] flex justify-center items-center ">
-            Nextjs
-          </span>
-          <Image src={next} alt="html" className="hidden lg:flex w-[50%] " />
-        </motion.div>
-        <motion.div
-          initial={{ width: 0 }}
-          whileInView={{ opacity: 1, y: 0, width: "30%" }}
-          transition={{ duration: 1, delay: 1 + 2 * 0.2 }}
-          className=" h-[2px] bg-white"
-        >
-          {" "}
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1 + 3 * 0.2 }}
-          className="w-[90%] lg:w-[60%] h-[100px] flex flex-row gap-4"
-        >
-          <span className="w-[50%] font-teko text-bold text-4xl text-[#FAEBD7] flex justify-center items-center ">
-            CSS
-          </span>
-          <Image src={Css} alt="html" className="hidden lg:flex w-[50%] " />
-        </motion.div>
-        <motion.div
-          initial={{ width: 0 }}
-          whileInView={{ opacity: 1, y: 0, width: "40%" }}
-          transition={{ duration: 1, delay: 1 + 3 * 0.2 }}
-          className=" h-[2px] bg-white"
-        >
-          {" "}
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1 + 4 * 0.2 }}
-          className="w-[90%] lg:w-[70%] h-[100px] flex flex-row gap-4"
-        >
-          <span className="w-[55%] font-teko text-bold text-4xl text-[#FAEBD7] flex justify-center items-center ">
-            Tailwind CSS
-          </span>
-          <div className="w-[45%] flex items-center justify-center">
-            <Image
-              src={tailwind}
-              alt="html"
-              className="hidden lg:flex w-[15%] "
-            />
+      <div className="w-full h-full flex justify-center items-center">
+        <div className="h-full w-[50%] flex justify-center items-center ">
+          <div className="w-full h-full flex flex-col gap-2">
+            <motion.div
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 1 + 0 * 0.2 }}
+              className=" w-full h-[100px] flex flex-row gap-4 "
+            >
+              <span className=" w-[90%] lg:w-[50%]  font-teko text-bold text-4xl text-[#FAEBD7] flex justify-center items-center">
+                Html
+              </span>
+              <Image src={Html} alt="html" className="hidden lg:flex w-[50%]" />
+            </motion.div>
+            <motion.div
+              initial={{ width: 0 }}
+              whileInView={{ opacity: 1, y: 0, width: "100%" }}
+              transition={{ duration: 1, delay: 1 + 0 * 0.2 }}
+              className="h-[2px] bg-white"
+            >
+              {" "}
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 1 + 1 * 0.2 }}
+              className="w-full h-[100px] flex flex-row gap-4 "
+            >
+              <span className="w-[90%] lg:w-[50%]  font-teko text-bold text-4xl text-[#FAEBD7] flex justify-center items-center ">
+                React
+              </span>
+              <Image
+                src={react}
+                alt="html"
+                className="hidden lg:flex w-[50%] "
+              />
+            </motion.div>
+            <motion.div
+              initial={{ width: 0 }}
+              whileInView={{ opacity: 1, y: 0, width: "100%" }}
+              transition={{ duration: 1, delay: 1 + 1 * 0.2 }}
+              className="  h-[2px] bg-white"
+            >
+              {" "}
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 1 + 2 * 0.2 }}
+              className="w-full h-[100px] flex flex-row gap-4"
+            >
+              <span className="w-[90%] lg:w-[50%]  font-teko text-bold text-4xl text-[#FAEBD7] flex justify-center items-center ">
+                Nextjs
+              </span>
+              <Image
+                src={next}
+                alt="html"
+                className="hidden lg:flex w-[50%] "
+              />
+            </motion.div>
+            <motion.div
+              initial={{ width: 0 }}
+              whileInView={{ opacity: 1, y: 0, width: "100%" }}
+              transition={{ duration: 1, delay: 1 + 2 * 0.2 }}
+              className=" h-[2px] bg-white"
+            >
+              {" "}
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 1 + 3 * 0.2 }}
+              className="w-full h-[100px] flex flex-row gap-4"
+            >
+              <span className="w-[90%] lg:w-[50%]  font-teko text-bold text-4xl text-[#FAEBD7] flex justify-center items-center ">
+                CSS
+              </span>
+              <Image src={Css} alt="html" className="hidden lg:flex w-[50%] " />
+            </motion.div>
+            <motion.div
+              initial={{ width: 0 }}
+              whileInView={{ opacity: 1, y: 0, width: "100%" }}
+              transition={{ duration: 1, delay: 1 + 3 * 0.2 }}
+              className=" h-[2px] bg-white"
+            >
+              {" "}
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 1 + 4 * 0.2 }}
+              className="w-full h-[100px] flex flex-row gap-4"
+            >
+              <span className="w-[90%] lg:w-[50%] font-teko text-bold text-4xl text-[#FAEBD7] flex justify-center items-center ">
+                Tailwind CSS
+              </span>
+              <div className="w-[50%] flex items-center justify-center">
+                <Image
+                  src={tailwind}
+                  alt="html"
+                  className="hidden lg:flex w-[20%] "
+                />
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ width: 0 }}
+              whileInView={{ opacity: 1, y: 0, width: "100%" }}
+              transition={{ duration: 1, delay: 1 + 4 * 0.2 }}
+              className="h-[2px] bg-white"
+            >
+              {" "}
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 1 + 5 * 0.2 }}
+              className="w-full h-[100px] flex flex-row gap-4"
+            >
+              <span className="w-[90%] lg:w-[50%] font-teko text-bold text-4xl text-[#FAEBD7] flex justify-center items-center ">
+                Typescript / Javascript
+              </span>
+              <Image src={Js} alt="html" className="hidden lg:flex w-[50%] " />
+            </motion.div>
+            <motion.div
+              initial={{ width: 0 }}
+              whileInView={{ opacity: 1, y: 0, width: "100%" }}
+              transition={{ duration: 1, delay: 1 + 5 * 0.2 }}
+              className="h-[2px] bg-white"
+            >
+              {" "}
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 1 + 6 * 0.2 }}
+              className="w-full h-[100px] flex flex-row gap-4"
+            >
+              <span className="w-[90%] lg:w-[50%]  font-teko text-bold text-4xl text-[#FAEBD7] flex justify-center items-center ">
+                Threejs / React Three Fiber
+              </span>
+              <Image
+                src={react}
+                alt="html"
+                className="hidden lg:flex w-[50%] "
+              />
+            </motion.div>
+            <motion.div
+              initial={{ width: 0 }}
+              whileInView={{ opacity: 1, y: 0, width: "100%" }}
+              transition={{ duration: 1, delay: 1 + 6 * 0.2 }}
+              className="h-[2px] bg-white"
+            >
+              {" "}
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 1 + 7 * 0.2 }}
+              className="w-full h-[100px] flex flex-row gap-4"
+            >
+              <span className="w-[90%] lg:w-[50%] font-teko text-bold text-4xl text-[#FAEBD7] flex justify-center items-center ">
+                Design UX/ Figma
+              </span>
+              <Image
+                src={figma}
+                alt="html"
+                className="hidden lg:flex w-[50%] "
+              />
+            </motion.div>
+            <motion.div
+              initial={{ width: 0 }}
+              whileInView={{ opacity: 1, y: 0, width: "100%" }}
+              transition={{ duration: 1, delay: 1 + 7 * 0.2 }}
+              className="h-[2px] bg-white"
+            >
+              {" "}
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 1 + 8 * 0.2 }}
+              className="w-full h-[100px] flex flex-row gap-4"
+            >
+              <span className="w-[90%] lg:w-[50%]  font-teko text-bold text-4xl text-[#FAEBD7] flex justify-center items-center ">
+                Angular
+              </span>
+              <Image
+                src={angular}
+                alt="html"
+                className="hidden lg:flex w-[50%] "
+              />
+            </motion.div>
+            <motion.div
+              initial={{ width: 0 }}
+              whileInView={{ opacity: 1, y: 0, width: "100%" }}
+              transition={{ duration: 1, delay: 1 + 8 * 0.2 }}
+              className="h-[2px] bg-white"
+            >
+              {" "}
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 25 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1, delay: 1 + 9 * 0.2 }}
+              className="w-full h-[100px] flex flex-row gap-4 "
+            >
+              <span className="w-[90%] lg:w-[50%]  font-teko text-bold text-4xl text-[#FAEBD7] flex justify-center items-center ">
+                3D Modeling
+              </span>
+              <Image
+                src={Threed}
+                alt="html"
+                className="hidden lg:flex w-[50%] "
+              />
+            </motion.div>
+            <motion.div
+              initial={{ width: 0 }}
+              whileInView={{ opacity: 1, y: 0, width: "100%" }}
+              transition={{ duration: 1, delay: 1 + 9 * 0.2 }}
+              className="h-[2px] bg-white"
+            >
+              {" "}
+            </motion.div>
           </div>
-        </motion.div>
-        <motion.div
-          initial={{ width: 0 }}
-          whileInView={{ opacity: 1, y: 0, width: "50%" }}
-          transition={{ duration: 1, delay: 1 + 4 * 0.2 }}
-          className="h-[2px] bg-white"
-        >
-          {" "}
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1 + 5 * 0.2 }}
-          className="w-[90%] lg:w-[80%] h-[100px] flex flex-row gap-4"
-        >
-          <span className="w-[60%] font-teko text-bold text-4xl text-[#FAEBD7] flex justify-center items-center ">
-            Typescript / Javascript
-          </span>
-          <Image src={Js} alt="html" className="hidden lg:flex w-[40%] " />
-        </motion.div>
-        <motion.div
-          initial={{ width: 0 }}
-          whileInView={{ opacity: 1, y: 0, width: "60%" }}
-          transition={{ duration: 1, delay: 1 + 5 * 0.2 }}
-          className="h-[2px] bg-white"
-        >
-          {" "}
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1 + 6 * 0.2 }}
-          className="w-[90%] lg:w-[90%] h-[100px] flex flex-row gap-4"
-        >
-          <span className="w-[65%] font-teko text-bold text-4xl text-[#FAEBD7] flex justify-center items-center ">
-            Threejs / React Three Fiber
-          </span>
-          <Image src={react} alt="html" className="hidden lg:flex w-[35%] " />
-        </motion.div>
-        <motion.div
-          initial={{ width: 0 }}
-          whileInView={{ opacity: 1, y: 0, width: "70%" }}
-          transition={{ duration: 1, delay: 1 + 6 * 0.2 }}
-          className="h-[2px] bg-white"
-        >
-          {" "}
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1 + 7 * 0.2 }}
-          className="w-[90%] lg:w-[100%] h-[100px] flex flex-row gap-4"
-        >
-          <span className="w-[65%] font-teko text-bold text-4xl text-[#FAEBD7] flex justify-center items-center ">
-            Design UX/ Figma
-          </span>
-          <Image src={figma} alt="html" className="hidden lg:flex w-[35%] " />
-        </motion.div>
-        <motion.div
-          initial={{ width: 0 }}
-          whileInView={{ opacity: 1, y: 0, width: "80%" }}
-          transition={{ duration: 1, delay: 1 + 7 * 0.2 }}
-          className="h-[2px] bg-white"
-        >
-          {" "}
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1 + 8 * 0.2 }}
-          className="w-[90%] lg:w-[100%] h-[100px] flex flex-row gap-4"
-        >
-          <span className="w-[80%] font-teko text-bold text-4xl text-[#FAEBD7] flex justify-center items-center ">
-            Angular
-          </span>
-          <Image src={angular} alt="html" className="hidden lg:flex w-[20%] " />
-        </motion.div>
-        <motion.div
-          initial={{ width: 0 }}
-          whileInView={{ opacity: 1, y: 0, width: "90%" }}
-          transition={{ duration: 1, delay: 1 + 8 * 0.2 }}
-          className="h-[2px] bg-white"
-        >
-          {" "}
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 25 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1, delay: 1 + 9 * 0.2 }}
-          className="w-[90%] lg:w-[100%] h-[100px] flex flex-row gap-4 "
-        >
-          <span className="w-[95%] font-teko text-bold text-4xl text-[#FAEBD7] flex justify-center items-center ">
-            3D Modeling
-          </span>
-          <Image src={Threed} alt="html" className="hidden lg:flex w-[5%] " />
-        </motion.div>
-        <motion.div
-          initial={{ width: 0 }}
-          whileInView={{ opacity: 1, y: 0, width: "100%" }}
-          transition={{ duration: 1, delay: 1 + 9 * 0.2 }}
-          className="h-[2px] bg-white"
-        >
-          {" "}
-        </motion.div>
+        </div>
+      </div>
+      <div className=" h-[200px] w-full">
+        <footer className="relative w-full h-full bg-white">
+          <div className="h-full">
+            <div className="h-full w-full border flex items-center gap-4">
+              <Typography
+                variant="h5"
+                className=" w-[20%] ml-6 mt-6   text-3xl font-teko "
+              >
+                My Portfolio
+              </Typography>
+              <Typography
+                as="a"
+                href="https://github.com/lalouli"
+                className=" w-[20%]  mt-6 opacity-80 transition-opacity hover:opacity-100"
+              >
+                <IconBrandGithub className="w-[70px] h-[70px]"/>
+              </Typography>
+              <Typography
+                as="a"
+                href="https://www.linkedin.com/in/houssam-lalouli-56a40b215/"
+                className=" w-[20%] mt-6 opacity-80 transition-opacity hover:opacity-100"
+              >
+                <IconBrandLinkedin className="text-blue-500 w-[70px] h-[70px]"  />
+              </Typography>
+              <Typography
+                as="a"
+                href="#"
+                className="flex w-[20%] mt-6 opacity-80 transition-opacity hover:opacity-100"
+              >
+                <IconMail className="text-red-500 w-[70px] h-[70px]"/>
+                <div className="flex flex-col lg:flex-row justify-center items-center ">
+
+                <span className="text-2xl font-teko font-bold ">
+            lalouli.houssam2017@gmail.com
+            </span>
+                </div>
+               
+              </Typography>
+              <Typography
+                as="a"
+                href="#"
+                className="flex w-[20%] mt-6 opacity-80 transition-opacity hover:opacity-100"
+              >
+                <IconDeviceLandlinePhone className="w-[70px] h-[70px]" />
+                <div className="flex flex-col lg:flex-row justify-center items-center">
+
+                <span className="text-2xl font-teko font-bold ">
+              06 17 93 75 29
+            </span>
+                </div>
+              </Typography>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
   );
