@@ -14,7 +14,7 @@ import Threed from "../../public/3d-model.svg";
 
 const Skils = () => {
   return (
-    <div className="w-full h-screen flex flex-col gap-10">
+    <div className="w-full h-[1400px] flex flex-col gap-10">
       <div className="h-[200px] w-full flex ">
         <motion.div
           animate={{ x: [10, 2000, 0] }}
