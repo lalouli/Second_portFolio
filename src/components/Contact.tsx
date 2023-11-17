@@ -8,7 +8,7 @@ import { IconMail } from "@tabler/icons-react";
 import { IconDeviceLandlinePhone } from "@tabler/icons-react";
 const Contact = () => {
   return (
-    <div className="w-full h-screen flex flex-col gap-10 ">
+    <div className="w-full h-screen flex flex-col gap-10">
       <div className="h-[200px] w-full flex ">
         <motion.div
           animate={{ x: [10, 2000, 0] }}
@@ -22,11 +22,11 @@ const Contact = () => {
           </span>
         </motion.div>
       </div>
-      <div className="w-full h-full flex justify-center items-center ">
-        <div className="flex flex-row  w-[80%] h-full ">
-          <div className="hidden lg:flex  justify-center items-center w-[50%] h-full">
+      <div className="w-[99%] h-full flex justify-center items-center ">
+        <div className="flex flex-row  w-[80%] h-[80%]  gap-8">
+          <div className="hidden lg:flex  justify-center items-center ">
             <motion.img
-              className="h-[1200px] w-full  object-cover object-center"
+              className="h-[800px] w-full  object-cover object-center "
               initial={{ opacity: 0, y: 25 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 1.9 }}
@@ -35,7 +35,7 @@ const Contact = () => {
             />
           </div>
           <>
-            <div className="mt-10 flex flex-col justify-center items-center space-y-12  w-[50%]" >
+            <div className="mt-10 flex flex-col justify-center items-center space-y-12">
               <motion.p
                 className="w-[400px]  text-xl flex flex-row font-skranji font-bold text-[#B3EFB2] gap-2"
                 initial={{ opacity: 0, y: 25 }}
